@@ -1,0 +1,5 @@
+<mat-list *ngFor="let rec of recomendacoes">
+  <mat-list-item >{{rec.texto_recomendacao}}</mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
+<p *ngIf="recomendacoes.length <= 0" class="mat-body-1" style="text-align:center;">Nenhuma Recomendacao</p>
